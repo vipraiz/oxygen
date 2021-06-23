@@ -1,0 +1,54 @@
+@media (max-width: 1439px) {
+  .portfolio {
+    display: none;
+  }
+}
+
+@media (max-width: 814px) {
+  .header__top {
+    flex-wrap: wrap;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .menu__list-item {
+    display: block;
+    height: 22px;
+    padding: 10px 0;
+
+    & + .menu__list-item {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .menu__list-item--active::after {
+    height: 3px;
+  }
+
+  ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+}
+
+@media (max-width: 453px) {
+  .header__content-title {
+    font-size: 72px;
+    line-height: 82px;
+  }
+}

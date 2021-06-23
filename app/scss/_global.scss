@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  outline-style: none;
+  padding: 0 0;
+}
+
+h1,
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373a39;
+  font-weight: 400;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sub-container {
+  padding: 0 135px;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: $orange;
+    bottom: -14px;
+    left: 0;
+  }
+}
